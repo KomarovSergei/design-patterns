@@ -1,27 +1,4 @@
 //bad variant
-// class CodeBuilder {
-//   constructor(className) {
-//     this.className = className;
-//     this.fields = [];
-//   }
-
-//   addField(name) {
-//     this.fields.push(name);
-//     return this;
-//   }
-
-//   toString() {
-//     return this.fields.length > 0
-//       ? `class ${this.className} {\n` +
-//           `  constructor(${this.fields[0]}, ${this.fields[1]}) {\n` +
-//           `    this.${this.fields[0]} = ${this.fields[0]};\n` +
-//           `    this.${this.fields[1]} = ${this.fields[1]};\n` +
-//           `  }\n` +
-//           `}`
-//       : `class ${this.className} {\n}`;
-//   }
-// }
-
 class Field {
   constructor(name) {
     this.name = name;
@@ -47,8 +24,8 @@ class Class {
       buffer.push(`) {\n`);
       this.fields.forEach(elem => buffer.push(`    this.${elem.name} = ${elem.name};\n`));
       buffer.push("  }\n");
-      buffer.push("}");
     }
+    buffer.push("}");
     return buffer.join("");
   }
 }
@@ -68,6 +45,4 @@ class CodeBuilder {
   }
 }
 
-let cb = new CodeBuilder("Person");
-cb.addField("name").addField("age");
-console.log(cb.toString());
+exports.CodeBuilder = CodeBuilder;
