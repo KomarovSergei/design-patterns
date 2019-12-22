@@ -1,1 +1,1 @@
-repo for [course]('https://www.udemy.com/course/design-patterns-javascript/')
+repo for [course](https://www.udemy.com/course/design-patterns-javascript/)
