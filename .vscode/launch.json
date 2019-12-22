@@ -9,7 +9,7 @@
       "request": "launch",
       "name": "Launch Program",
       "skipFiles": ["<node_internals>/**"],
-      "program": "${workspaceFolder}/src/node_modules/builder/builder.js"
+      "program": "${workspaceFolder}/src/builder/hw.js"
     }
   ]
 }

@@ -1,0 +1,27 @@
+{
+  "name": "design-patterns",
+  "version": "1.0.0",
+  "description": "repo for [course]('https://www.udemy.com/course/design-patterns-javascript/')",
+  "main": "index.js",
+  "dependencies": {
+    "describe": "^1.2.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2"
+  },
+  "scripts": {
+    "test": "node ./node_modules/mocha/bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KomarovSergei/design-patterns.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KomarovSergei/design-patterns/issues"
+  },
+  "homepage": "https://github.com/KomarovSergei/design-patterns#readme"
+}
