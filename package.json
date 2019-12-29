@@ -4,6 +4,7 @@
   "description": "repo for [course]('https://www.udemy.com/course/design-patterns-javascript/')",
   "main": "index.js",
   "dependencies": {
+    "async": "^3.1.0",
     "describe": "^1.2.0"
   },
   "devDependencies": {
